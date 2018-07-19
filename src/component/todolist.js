@@ -27,12 +27,7 @@ class Todolist extends Component {
 
 
         return (<ol>
-            <li id="c57aab79-7dfa-4d85-8ede-aa653a8b5d93" className="">
-                <input name="done-todo" type="checkbox" className="done-todo"/> Parking Lot APP Refactor
-            </li>
-            <li id="00bd6227-e881-4024-ad7a-4212d930c947" className="checked">
-                <input name="done-todo" type="checkbox" className="done-todo" checked/> Parking Lot APP 时序图
-            </li>
+
             {
                 this.props.todolist.map((item) => {
                     return (<li id={item.id} className={item.complete ? "checked" : ""}
